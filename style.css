@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: #eee;
+    scroll-behavior: smooth !important;
+}
+
+body{
+    background: #131313;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+::-webkit-scrollbar{
+    background-color: #9b9b9b33;
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #FF701F33;
+}
+
+.-title{
+    font-family: 'Unbounded', cursive;
+}
+
+.-handwriting{
+    font-family: 'Neucha', cursive;
+}
+
+.-primary{
+    color: #FF701F;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    height: 45px;
+    width: 94dvw;
+    display: flex;
+    background-color: #33333388;
+    padding: 0 3dvw;
+    align-items: center;
+    justify-content: center;
+    gap: 3dvw;
+    color: #747474;
+    z-index: 50;
+}
+
+nav#mobile{
+    display: none;
+}
+
+#navMenuList{
+    display: none;
+    background-color: #131313;
+    position: fixed;
+    height: 100dvh;
+    width: 100dvw;
+    z-index: 51;
+}
+
+#navMenuList i{
+    z-index: 100;
+    position: fixed;
+    left: 90dvw;
+    top: 5dvh;
+}
+
+#navMenuList .navitems{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100dvw;
+}
+
+nav a:hover{
+    transform: translateY(2px) scale(1.02);
+    color: #eee;
+    transition: .3s ease-in-out;
+}
+
+nav .title{
+    font-family: 'Unbounded', cursive;
+    font-weight: 800;
+    color: #FF701F;
+}
+
+nav .active{
+    color: #bbb;
+}
+
+nav.button#mobile{
+    background: none;
+    position: fixed;
+    left: 85dvw;
+    top: 91dvh;
+    size: 1.5rem;
+    padding: .75rem;
+    background: #FF701F;
+    border-radius: 1rem 0 0 0;
+}
+
+main{
+    display: grid;
+    grid-auto-rows: 100dvh;
+    scroll-snap-type: y proximity;
+}
+
+main h1{
+    font-family: 'Unbounded', cursive;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+main h4{
+    font-family: 'Unbounded', cursive;
+    font-weight: 400;
+}
+
+main p span{
+    color: #FF701F;
+    font-family: 'Unbounded', cursive;
+}
+
+main button{
+    background-color: #FF701F;
+    padding: 1dvh 2dvw;
+    border-radius: .75rem;
+    margin-top: 2dvw;
+    border: none;
+}
+
+main button:hover{
+    background-color: hsl(22, 100%, 66%);
+    transform: scale(1.01);
+    transition: .3s ease-in-out;
+}
+
+main > div{
+    padding: 3dvh 3dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    /* scroll-snap-align: center; */
+}
+
+#home #page1{
+    background: 
+    linear-gradient(73deg, #131313, #13131344),
+    linear-gradient(0deg, #131313, #13131399),
+    linear-gradient(28deg, #13131399, #FF701F66),
+    linear-gradient(135deg, #13131322, #2e1fff33),
+    url(bg.jpg)
+    ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.members{
+    margin-bottom: 3dvh;
+}
+
+.members .img-grid{
+    display: flex;
+    overflow-x: auto;
+    gap: 2dvw;
+    width: 94dvw;
+}
+
+.cards{
+    position: relative;
+}
+
+.card-dsc:hover{
+    padding: 200px 10px 10px 10px;
+    background: linear-gradient(0deg, #1a1a1aee, #1a1a1a00);
+    transition: .3s ease-in-out;
+}
+
+.card-dsc{
+    position: absolute;
+    width: 160px;
+    bottom: 0;
+    z-index: 10;
+    padding: 50px 10px 10px 10px;
+    background: linear-gradient(0deg, #333333ee, #33333300);
+}
+
+.card-img{
+    position: relative;
+}
+
+.more-card{
+    margin-right: 1rem;
+    min-width: 180px;
+    height: 240px;
+    display: flex;
+    background: #33333388;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-card:hover{
+    color: #FF701F;
+    transition: .3s ease-in-out;
+}
+
+.missions{
+    width: 94dvw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 240px;
+    text-align: center;
+}
+
+.missions div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.missions div i{
+    font-size: 3rem;
+}
+
+.missions div p{
+    width: 70%;
+}
+
+.mission-1:hover >i{
+    color: rgb(255, 251, 0);
+    transition: .3s ease-in-out;
+    transform: translateY(-5px) scale(1.01);
+}
+
+.mission-2:hover >i{
+    color: #FF701F;
+    transition: .3s ease-in-out;
+    transform: translateY(-5px) scale(1.01);
+}
+
+.mission-3:hover >i{
+    color: #1f93ff;
+    transition: .3s ease-in-out;
+    transform: translateY(-5px) scale(1.01);
+}
+
+main#members{
+    height: 100dvh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15dvh 1fr 1fr;
+    grid-template-areas: "title title" "teacher teams" "member member";
+}
+
+#members .teacher,
+#members .teams{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#members .gallery-title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-area: title;
+}
+
+#members .teacher{
+    grid-area: teacher;
+}
+#members .teams{
+    grid-area: teams;
+}
+#members .members{
+    grid-area: member;
+}
+
+#gallery{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-card{
+    position: relative;
+}
+
+.gallery-card .gc-thumbnail{
+    position: relative;
+    z-index: 1;
+}
+
+.gallery-card .gc-desc{
+    position: absolute;
+    padding: 10px;
+    bottom: 50px;
+    width: 100%;
+    background-color: #13131366;
+    z-index: 2;
+}
+
+.gc-title{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.gc-sub{
+    font-size: 1rem;
+}
+
+#about{
+    grid-template-rows: 15dvh 1fr;
+    height: 100dvh;
+    background: 
+    linear-gradient(73deg, #131313, #13131344),
+    linear-gradient(0deg, #131313, #13131399),
+    linear-gradient(28deg, #13131399, #FF701F66),
+    linear-gradient(135deg, #13131322, #2e1fff33),
+    url(bg.jpg)
+    ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about .title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#about .content{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1dvw;
+}
+
+#about .content .descriptions{
+    max-width: 700px;
+    width: 400px;
+    text-align: right;
+}
+
+@media(max-width: 750px){
+    nav#mobile{
+        display: flex;
+        background: #1d1d1d88;
+        justify-content: space-between;
+    }
+
+    nav#desktop{
+        display: none;
+    }
+
+    .missions div p{
+        width: 95%;
+    }
+
+    #about .content .descriptions{
+        text-align: center;
+    }
+}
