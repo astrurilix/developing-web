@@ -69,7 +69,7 @@
                   <div class="card-h2">Member</div>
               </div>
               <div class="card-img">
-              <img src="https://picsum.photos/180/240?random=<?= $i; ?>">
+              <img src="https://picsum.photos/180/240?random=<?= $i+1; ?>">
               </div>
           </div>
           <?php endfor;?>
