@@ -117,17 +117,19 @@ main{
 main h1{
     font-family: 'Unbounded', cursive;
     font-weight: 800;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 main h4{
     font-family: 'Unbounded', cursive;
     font-weight: 400;
+    font-size: 1.5rem;
 }
 
 main p span{
     color: #FF701F;
     font-family: 'Unbounded', cursive;
+    font-weight: 600;
 }
 
 main button{
@@ -198,6 +200,12 @@ main > div{
 
 .card-img{
     position: relative;
+}
+
+.card-img img{
+    width: 180px;
+    height: 240px;
+    object-fit: cover;
 }
 
 .more-card{
@@ -304,6 +312,12 @@ main#members{
     z-index: 1;
 }
 
+.gc-thumbnail img{
+    width: 200px;
+    height: 240px;
+    object-fit: cover;
+}
+
 .gallery-card .gc-desc{
     position: absolute;
     padding: 10px;
@@ -320,6 +334,10 @@ main#members{
 
 .gc-sub{
     font-size: 1rem;
+}
+
+.gallery-card:hover{
+    transform: translateZ(2) scale(1.4);
 }
 
 #about{
@@ -358,6 +376,15 @@ main#members{
 }
 
 @media(max-width: 750px){
+
+    main h1{
+        font-size: 2.5rem;
+    }
+
+    main h4{
+        font-size: 1rem;
+    }
+
     nav#mobile{
         display: flex;
         background: #1d1d1d88;

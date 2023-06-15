@@ -62,7 +62,7 @@
       </div>
       <div class="members">
         <div class="img-grid">
-          <?php for($i = 0; $i < 8; $i++):?>
+          <?php for($i = 0; $i < 10; $i++):?>
           <div class="cards">
               <div class="card-dsc">
                   <div class="card-h1 -title">Your Name Here</div>

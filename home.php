@@ -20,7 +20,9 @@
         <a href="about.php">About Us</a>
     </nav>
     <nav id="mobile">
-        <div class="title">UKM DEVELOPING</div>
+        <a href="#page1">
+            <div class="title">UKM DEVELOPING</div>
+        </a>
     </nav>
     <nav class="button" id="mobile">
         <i class="fa-solid fa-bars" id="navMenuButton"></i>
@@ -54,7 +56,7 @@
                             <div class="card-h2">Your Role Here</div>
                         </div>
                         <div class="card-img">
-                            <img src="https://picsum.photos/180/240?random=<?= $i; ?>">
+                            <img src="https://picsum.photos/230/240?random=<?= $i; ?>">
                         </div>
                     </div>
                     <?php endfor;?>
