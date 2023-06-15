@@ -35,7 +35,7 @@
         </div>
     </div>
     <main id="gallery">
-      <?php for($i=0; $i<10; $i++):?>
+      <?php for($i=0; $i<5; $i++):?>
       <div class="gallery-card">
         <div class="gc-thumbnail"><img src="https://picsum.photos/200/240?random=<?= $i; ?>"></div>
         <div class="gc-desc">

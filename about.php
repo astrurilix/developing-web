@@ -37,10 +37,18 @@
     <main id="about">
       <div class="title -title" style="font-weight:800; font-size:1.5rem;">ABOUT US</div>
       <div class="content">
-        <img src="https://picsum.photos/400/350?random=$i">
+        <img src="bg.jpg">
         <div class="descriptions">
-          UKM Developing Unika Soegijapranata adalah Unit Kegiatan Mahasiswa yang berfokus untuk belajar dan mengembangkan skill programming mahasiswa Fakultas Ilmu Komputer Unika Soegijapranata. <br>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur reiciendis eaque iste necessitatibus quaerat repellendus earum illo quibusdam totam voluptatibus saepe soluta, magnam beatae? Voluptatum laborum voluptate reprehenderit consequuntur illum?<br>
+          <p>
+            Penggunaan teknologi digital semakin mendominasi dan berkembang pesat di zaman sekarang.
+            Sayangnya belum banyak para mahasiswa yang menuangkan bakat dan minatnya dalam bidang coding khususnya pemnbuatan web yang bagus dan modern.
+          </p>
+          <p>
+            Oleh karena itu, kampus kami Unika Soegijapranata memberikan kesempatan kepada para mahasiswanya untuk menyalurkan aspirasi coding mereka ke dalam UKM Developing.
+          </p>
+          <p>
+            <span class="-title -primary">UKM Developing</span> adalah Unit Kegiatan Mahasiswa yang berfokus untuk belajar dan mengembangkan skill programming mahasiswa Fakultas Ilmu Komputer Unika Soegijapranata.
+          </p>
           <a href="#">
             <button>Join Us</button>
           </a>

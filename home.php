@@ -41,7 +41,7 @@
             <h1>UKM DEVELOPING</h1>
             <h4>SOEGIJAPRANATA CATHOLIC UNIVERSITY</h4>
             <p>Community who are passionate about <span>Programming</span>.</p>
-            <a href="#page2"><button>Check Us Out</button></a>
+            <a href="#page2"><button class="home">Check Us Out</button></a>
         </div>
         <div id="page2">
             <div class="members">
@@ -49,11 +49,29 @@
                     <h4 class="-primary" style="font-weight:500; margin-bottom: 1rem;">OUR TEAMS</h4>
                 </a>
                 <div class="img-grid">
-                    <?php for($i = 0; $i < 8; $i++):?>
+                    <div class="cards">
+                        <div class="card-dsc">
+                            <div class="card-h1 -title">Andre Kurniawan Pamudji, S.Kom, M.Ling.</div>
+                            <div class="card-h2">Pengajar</div>
+                        </div>
+                        <div class="card-img">
+                            <img src="img/pengajar/1.jpg">
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card-dsc">
+                            <div class="card-h1 -title">Soen Anita Sanjaya</div>
+                            <div class="card-h2">Ketua</div>
+                        </div>
+                        <div class="card-img">
+                            <img src="https://picsum.photos/230/240?random=12">
+                        </div>
+                    </div>
+                    <?php for($i = 0; $i < 6; $i++):?>
                     <div class="cards">
                         <div class="card-dsc">
                             <div class="card-h1 -title">Your Name Here</div>
-                            <div class="card-h2">Your Role Here</div>
+                            <div class="card-h2">Anggota</div>
                         </div>
                         <div class="card-img">
                             <img src="https://picsum.photos/230/240?random=<?= $i; ?>">
@@ -67,7 +85,7 @@
             </div>
             <div class="gallery">
                 <a href="gallery.php">
-                    <h4 class="-primary" style="font-weight:500;">WHAT WE DO</h4>
+                    <h4 class="-primary" style="font-weight:500;">WHAT WE DO <i class="fa-solid fa-angle-right" style="font-size: 1rem; opacity:30%;"></i></h4>
                 </a>
                 <div class="missions">
                     <div class="mission-1">

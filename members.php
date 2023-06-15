@@ -41,19 +41,19 @@
       <div class="teacher">
         <div class="cards">
           <div class="card-dsc">
-            <div class="card-h1 -title">Your Name Here</div>
-            <div class="card-h2">Teacher</div>
+              <div class="card-h1 -title">Andre Kurniawan Pamudji, S.Kom, M.Ling.</div>
+              <div class="card-h2">Pengajar</div>
           </div>
           <div class="card-img">
-            <img src="https://picsum.photos/180/240?random=56">
+              <img src="img/pengajar/1.jpg">
           </div>
         </div>
       </div>
       <div class="teams">
         <div class="cards">
           <div class="card-dsc">
-            <div class="card-h1 -title">Your Name Here</div>
-            <div class="card-h2">Leader</div>
+            <div class="card-h1 -title">Soen Anita Sanjaya</div>
+            <div class="card-h2">Ketua</div>
           </div>
           <div class="card-img">
             <img src="https://picsum.photos/180/240?random=12">
@@ -66,7 +66,7 @@
           <div class="cards">
               <div class="card-dsc">
                   <div class="card-h1 -title">Your Name Here</div>
-                  <div class="card-h2">Member</div>
+                  <div class="card-h2">Anggota</div>
               </div>
               <div class="card-img">
               <img src="https://picsum.photos/180/240?random=<?= $i+1; ?>">
